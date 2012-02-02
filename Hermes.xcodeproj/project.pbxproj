@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C476D3314DB42C500DBD043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3214DB42C500DBD043 /* UIKit.framework */; };
+		3C476D3514DB42C500DBD043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3414DB42C500DBD043 /* Foundation.framework */; };
+		3C476D3714DB42C500DBD043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3614DB42C500DBD043 /* CoreGraphics.framework */; };
+		3C476D3D14DB42C500DBD043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D3B14DB42C500DBD043 /* InfoPlist.strings */; };
+		3C476D3F14DB42C600DBD043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D3E14DB42C600DBD043 /* main.m */; };
+		3C476D4314DB42C600DBD043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D4214DB42C600DBD043 /* AppDelegate.m */; };
+		3C476D4B14DB42C600DBD043 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D4A14DB42C600DBD043 /* SenTestingKit.framework */; };
+		3C476D4C14DB42C600DBD043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3214DB42C500DBD043 /* UIKit.framework */; };
+		3C476D4D14DB42C600DBD043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3414DB42C500DBD043 /* Foundation.framework */; };
+		3C476D5514DB42C600DBD043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D5314DB42C600DBD043 /* InfoPlist.strings */; };
+		3C476D5814DB42C600DBD043 /* HermesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D5714DB42C600DBD043 /* HermesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C476D4E14DB42C600DBD043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C476D2514DB42C500DBD043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C476D2D14DB42C500DBD043;
+			remoteInfo = Hermes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C476D2E14DB42C500DBD043 /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C476D3214DB42C500DBD043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C476D3414DB42C500DBD043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C476D3614DB42C500DBD043 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C476D3A14DB42C500DBD043 /* Hermes-Info.plist */ = {isa = PBXFileReference; path = "Hermes-Info.plist"; sourceTree = "<group>"; };
+		3C476D3C14DB42C500DBD043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C476D3E14DB42C600DBD043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C476D4014DB42C600DBD043 /* Hermes-Prefix.pch */ = {isa = PBXFileReference; path = "Hermes-Prefix.pch"; sourceTree = "<group>"; };
+		3C476D4114DB42C600DBD043 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C476D4214DB42C600DBD043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C476D4914DB42C600DBD043 /* HermesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C476D4A14DB42C600DBD043 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C476D5214DB42C600DBD043 /* HermesTests-Info.plist */ = {isa = PBXFileReference; path = "HermesTests-Info.plist"; sourceTree = "<group>"; };
+		3C476D5414DB42C600DBD043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C476D5614DB42C600DBD043 /* HermesTests.h */ = {isa = PBXFileReference; path = HermesTests.h; sourceTree = "<group>"; };
+		3C476D5714DB42C600DBD043 /* HermesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HermesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C476D2B14DB42C500DBD043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D3314DB42C500DBD043 /* UIKit.framework in Frameworks */,
+				3C476D3514DB42C500DBD043 /* Foundation.framework in Frameworks */,
+				3C476D3714DB42C500DBD043 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C476D4514DB42C600DBD043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D4B14DB42C600DBD043 /* SenTestingKit.framework in Frameworks */,
+				3C476D4C14DB42C600DBD043 /* UIKit.framework in Frameworks */,
+				3C476D4D14DB42C600DBD043 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C476D2314DB42C500DBD043 = {
+			isa = PBXGroup;
+			children = (
+				3C476D3814DB42C500DBD043 /* Hermes */,
+				3C476D5014DB42C600DBD043 /* HermesTests */,
+				3C476D3114DB42C500DBD043 /* Frameworks */,
+				3C476D2F14DB42C500DBD043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C476D2F14DB42C500DBD043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D2E14DB42C500DBD043 /* Hermes.app */,
+				3C476D4914DB42C600DBD043 /* HermesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C476D3114DB42C500DBD043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D3214DB42C500DBD043 /* UIKit.framework */,
+				3C476D3414DB42C500DBD043 /* Foundation.framework */,
+				3C476D3614DB42C500DBD043 /* CoreGraphics.framework */,
+				3C476D4A14DB42C600DBD043 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C476D3814DB42C500DBD043 /* Hermes */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D4114DB42C600DBD043 /* AppDelegate.h */,
+				3C476D4214DB42C600DBD043 /* AppDelegate.m */,
+				3C476D3914DB42C500DBD043 /* Supporting Files */,
+			);
+			path = Hermes;
+			sourceTree = "<group>";
+		};
+		3C476D3914DB42C500DBD043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D3A14DB42C500DBD043 /* Hermes-Info.plist */,
+				3C476D3B14DB42C500DBD043 /* InfoPlist.strings */,
+				3C476D3E14DB42C600DBD043 /* main.m */,
+				3C476D4014DB42C600DBD043 /* Hermes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C476D5014DB42C600DBD043 /* HermesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D5614DB42C600DBD043 /* HermesTests.h */,
+				3C476D5714DB42C600DBD043 /* HermesTests.m */,
+				3C476D5114DB42C600DBD043 /* Supporting Files */,
+			);
+			path = HermesTests;
+			sourceTree = "<group>";
+		};
+		3C476D5114DB42C600DBD043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D5214DB42C600DBD043 /* HermesTests-Info.plist */,
+				3C476D5314DB42C600DBD043 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C476D2D14DB42C500DBD043 /* Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C476D5B14DB42C600DBD043 /* Build configuration list for PBXNativeTarget "Hermes" */;
+			buildPhases = (
+				3C476D2A14DB42C500DBD043 /* Sources */,
+				3C476D2B14DB42C500DBD043 /* Frameworks */,
+				3C476D2C14DB42C500DBD043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hermes;
+			productName = Hermes;
+			productReference = 3C476D2E14DB42C500DBD043 /* Hermes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C476D4814DB42C600DBD043 /* HermesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C476D5E14DB42C600DBD043 /* Build configuration list for PBXNativeTarget "HermesTests" */;
+			buildPhases = (
+				3C476D4414DB42C600DBD043 /* Sources */,
+				3C476D4514DB42C600DBD043 /* Frameworks */,
+				3C476D4614DB42C600DBD043 /* Resources */,
+				3C476D4714DB42C600DBD043 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C476D4F14DB42C600DBD043 /* PBXTargetDependency */,
+			);
+			name = HermesTests;
+			productName = HermesTests;
+			productReference = 3C476D4914DB42C600DBD043 /* HermesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C476D2514DB42C500DBD043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Northern Arizona University";
+			};
+			buildConfigurationList = 3C476D2814DB42C500DBD043 /* Build configuration list for PBXProject "Hermes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C476D2314DB42C500DBD043;
+			productRefGroup = 3C476D2F14DB42C500DBD043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C476D2D14DB42C500DBD043 /* Hermes */,
+				3C476D4814DB42C600DBD043 /* HermesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C476D2C14DB42C500DBD043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D3D14DB42C500DBD043 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C476D4614DB42C600DBD043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D5514DB42C600DBD043 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C476D4714DB42C600DBD043 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C476D2A14DB42C500DBD043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D3F14DB42C600DBD043 /* main.m in Sources */,
+				3C476D4314DB42C600DBD043 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C476D4414DB42C600DBD043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476D5814DB42C600DBD043 /* HermesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C476D4F14DB42C600DBD043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C476D2D14DB42C500DBD043 /* Hermes */;
+			targetProxy = 3C476D4E14DB42C600DBD043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C476D3B14DB42C500DBD043 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C476D3C14DB42C500DBD043 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C476D5314DB42C600DBD043 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C476D5414DB42C600DBD043 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C476D5914DB42C600DBD043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C476D5A14DB42C600DBD043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C476D5C14DB42C600DBD043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hermes/Hermes-Prefix.pch";
+				INFOPLIST_FILE = "Hermes/Hermes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C476D5D14DB42C600DBD043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hermes/Hermes-Prefix.pch";
+				INFOPLIST_FILE = "Hermes/Hermes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C476D5F14DB42C600DBD043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hermes.app/Hermes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hermes/Hermes-Prefix.pch";
+				INFOPLIST_FILE = "HermesTests/HermesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C476D6014DB42C600DBD043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hermes.app/Hermes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hermes/Hermes-Prefix.pch";
+				INFOPLIST_FILE = "HermesTests/HermesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C476D2814DB42C500DBD043 /* Build configuration list for PBXProject "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C476D5914DB42C600DBD043 /* Debug */,
+				3C476D5A14DB42C600DBD043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C476D5B14DB42C600DBD043 /* Build configuration list for PBXNativeTarget "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C476D5C14DB42C600DBD043 /* Debug */,
+				3C476D5D14DB42C600DBD043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C476D5E14DB42C600DBD043 /* Build configuration list for PBXNativeTarget "HermesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C476D5F14DB42C600DBD043 /* Debug */,
+				3C476D6014DB42C600DBD043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C476D2514DB42C500DBD043 /* Project object */;
+}
