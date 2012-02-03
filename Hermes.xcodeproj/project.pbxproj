@@ -18,6 +18,23 @@
 		3C476D4D14DB42C600DBD043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3414DB42C500DBD043 /* Foundation.framework */; };
 		3C476D5514DB42C600DBD043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D5314DB42C600DBD043 /* InfoPlist.strings */; };
 		3C476D5814DB42C600DBD043 /* HermesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D5714DB42C600DBD043 /* HermesTests.m */; };
+		3C476D6C14DB435900DBD043 /* SEMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D6714DB435900DBD043 /* SEMenuItem.m */; };
+		3C476D6D14DB435900DBD043 /* SESpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D6914DB435900DBD043 /* SESpringBoard.m */; };
+		3C476D6E14DB435900DBD043 /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D6B14DB435900DBD043 /* SEViewController.m */; };
+		3C476D7514DB463400DBD043 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D7414DB463400DBD043 /* RootViewController.m */; };
+		3C476D9314DB487700DBD043 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9214DB487700DBD043 /* RootViewController.xib */; };
+		3C476D9A14DB4D2600DBD043 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9614DB4D2600DBD043 /* history.png */; };
+		3C476D9B14DB4D2600DBD043 /* localDeals.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9714DB4D2600DBD043 /* localDeals.png */; };
+		3C476D9C14DB4D2600DBD043 /* pendingTransactions.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9814DB4D2600DBD043 /* pendingTransactions.png */; };
+		3C476D9D14DB4D2600DBD043 /* sendMoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9914DB4D2600DBD043 /* sendMoney.png */; };
+		3C476DA114DB508200DBD043 /* SendMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D9F14DB508100DBD043 /* SendMoneyViewController.m */; };
+		3C476DA214DB508200DBD043 /* SendMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476DA014DB508100DBD043 /* SendMoneyViewController.xib */; };
+		3C476DA614DB515700DBD043 /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476DA414DB515700DBD043 /* TransactionsViewController.m */; };
+		3C476DA714DB515700DBD043 /* TransactionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476DA514DB515700DBD043 /* TransactionsViewController.xib */; };
+		3C476DAB14DB521200DBD043 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476DA914DB521200DBD043 /* HistoryViewController.m */; };
+		3C476DAC14DB521200DBD043 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476DAA14DB521200DBD043 /* HistoryViewController.xib */; };
+		3C476DB014DB524400DBD043 /* LocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476DAE14DB524400DBD043 /* LocalViewController.m */; };
+		3C476DB114DB524400DBD043 /* LocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476DAF14DB524400DBD043 /* LocalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +52,43 @@
 		3C476D3214DB42C500DBD043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C476D3414DB42C500DBD043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C476D3614DB42C500DBD043 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3C476D3A14DB42C500DBD043 /* Hermes-Info.plist */ = {isa = PBXFileReference; path = "Hermes-Info.plist"; sourceTree = "<group>"; };
+		3C476D3A14DB42C500DBD043 /* Hermes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hermes-Info.plist"; sourceTree = "<group>"; };
 		3C476D3C14DB42C500DBD043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C476D3E14DB42C600DBD043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C476D4014DB42C600DBD043 /* Hermes-Prefix.pch */ = {isa = PBXFileReference; path = "Hermes-Prefix.pch"; sourceTree = "<group>"; };
-		3C476D4114DB42C600DBD043 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C476D4014DB42C600DBD043 /* Hermes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hermes-Prefix.pch"; sourceTree = "<group>"; };
+		3C476D4114DB42C600DBD043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C476D4214DB42C600DBD043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C476D4914DB42C600DBD043 /* HermesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C476D4A14DB42C600DBD043 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3C476D5214DB42C600DBD043 /* HermesTests-Info.plist */ = {isa = PBXFileReference; path = "HermesTests-Info.plist"; sourceTree = "<group>"; };
+		3C476D5214DB42C600DBD043 /* HermesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HermesTests-Info.plist"; sourceTree = "<group>"; };
 		3C476D5414DB42C600DBD043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3C476D5614DB42C600DBD043 /* HermesTests.h */ = {isa = PBXFileReference; path = HermesTests.h; sourceTree = "<group>"; };
+		3C476D5614DB42C600DBD043 /* HermesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HermesTests.h; sourceTree = "<group>"; };
 		3C476D5714DB42C600DBD043 /* HermesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HermesTests.m; sourceTree = "<group>"; };
+		3C476D6614DB435900DBD043 /* SEMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEMenuItem.h; sourceTree = "<group>"; };
+		3C476D6714DB435900DBD043 /* SEMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMenuItem.m; sourceTree = "<group>"; };
+		3C476D6814DB435900DBD043 /* SESpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESpringBoard.h; sourceTree = "<group>"; };
+		3C476D6914DB435900DBD043 /* SESpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESpringBoard.m; sourceTree = "<group>"; };
+		3C476D6A14DB435900DBD043 /* SEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
+		3C476D6B14DB435900DBD043 /* SEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEViewController.m; sourceTree = "<group>"; };
+		3C476D7314DB463400DBD043 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3C476D7414DB463400DBD043 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3C476D9214DB487700DBD043 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		3C476D9614DB4D2600DBD043 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
+		3C476D9714DB4D2600DBD043 /* localDeals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = localDeals.png; sourceTree = "<group>"; };
+		3C476D9814DB4D2600DBD043 /* pendingTransactions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendingTransactions.png; sourceTree = "<group>"; };
+		3C476D9914DB4D2600DBD043 /* sendMoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendMoney.png; sourceTree = "<group>"; };
+		3C476D9E14DB508100DBD043 /* SendMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMoneyViewController.h; sourceTree = "<group>"; };
+		3C476D9F14DB508100DBD043 /* SendMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMoneyViewController.m; sourceTree = "<group>"; };
+		3C476DA014DB508100DBD043 /* SendMoneyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMoneyViewController.xib; sourceTree = "<group>"; };
+		3C476DA314DB515700DBD043 /* TransactionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsViewController.h; sourceTree = "<group>"; };
+		3C476DA414DB515700DBD043 /* TransactionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsViewController.m; sourceTree = "<group>"; };
+		3C476DA514DB515700DBD043 /* TransactionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionsViewController.xib; sourceTree = "<group>"; };
+		3C476DA814DB521200DBD043 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		3C476DA914DB521200DBD043 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		3C476DAA14DB521200DBD043 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		3C476DAD14DB524400DBD043 /* LocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalViewController.h; sourceTree = "<group>"; };
+		3C476DAE14DB524400DBD043 /* LocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalViewController.m; sourceTree = "<group>"; };
+		3C476DAF14DB524400DBD043 /* LocalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +118,8 @@
 		3C476D2314DB42C500DBD043 = {
 			isa = PBXGroup;
 			children = (
+				3C476D9514DB4D2600DBD043 /* Icons */,
+				3C476D6514DB435900DBD043 /* SESpringBoard */,
 				3C476D3814DB42C500DBD043 /* Hermes */,
 				3C476D5014DB42C600DBD043 /* HermesTests */,
 				3C476D3114DB42C500DBD043 /* Frameworks */,
@@ -108,6 +152,21 @@
 			children = (
 				3C476D4114DB42C600DBD043 /* AppDelegate.h */,
 				3C476D4214DB42C600DBD043 /* AppDelegate.m */,
+				3C476D7314DB463400DBD043 /* RootViewController.h */,
+				3C476D7414DB463400DBD043 /* RootViewController.m */,
+				3C476D9214DB487700DBD043 /* RootViewController.xib */,
+				3C476D9E14DB508100DBD043 /* SendMoneyViewController.h */,
+				3C476D9F14DB508100DBD043 /* SendMoneyViewController.m */,
+				3C476DA014DB508100DBD043 /* SendMoneyViewController.xib */,
+				3C476DA314DB515700DBD043 /* TransactionsViewController.h */,
+				3C476DA414DB515700DBD043 /* TransactionsViewController.m */,
+				3C476DA514DB515700DBD043 /* TransactionsViewController.xib */,
+				3C476DA814DB521200DBD043 /* HistoryViewController.h */,
+				3C476DA914DB521200DBD043 /* HistoryViewController.m */,
+				3C476DAA14DB521200DBD043 /* HistoryViewController.xib */,
+				3C476DAD14DB524400DBD043 /* LocalViewController.h */,
+				3C476DAE14DB524400DBD043 /* LocalViewController.m */,
+				3C476DAF14DB524400DBD043 /* LocalViewController.xib */,
 				3C476D3914DB42C500DBD043 /* Supporting Files */,
 			);
 			path = Hermes;
@@ -141,6 +200,31 @@
 				3C476D5314DB42C600DBD043 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C476D6514DB435900DBD043 /* SESpringBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D6614DB435900DBD043 /* SEMenuItem.h */,
+				3C476D6714DB435900DBD043 /* SEMenuItem.m */,
+				3C476D6814DB435900DBD043 /* SESpringBoard.h */,
+				3C476D6914DB435900DBD043 /* SESpringBoard.m */,
+				3C476D6A14DB435900DBD043 /* SEViewController.h */,
+				3C476D6B14DB435900DBD043 /* SEViewController.m */,
+			);
+			path = SESpringBoard;
+			sourceTree = "<group>";
+		};
+		3C476D9514DB4D2600DBD043 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3C476D9614DB4D2600DBD043 /* history.png */,
+				3C476D9714DB4D2600DBD043 /* localDeals.png */,
+				3C476D9814DB4D2600DBD043 /* pendingTransactions.png */,
+				3C476D9914DB4D2600DBD043 /* sendMoney.png */,
+			);
+			name = Icons;
+			path = Hermes/Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +299,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C476D3D14DB42C500DBD043 /* InfoPlist.strings in Resources */,
+				3C476D9314DB487700DBD043 /* RootViewController.xib in Resources */,
+				3C476D9A14DB4D2600DBD043 /* history.png in Resources */,
+				3C476D9B14DB4D2600DBD043 /* localDeals.png in Resources */,
+				3C476D9C14DB4D2600DBD043 /* pendingTransactions.png in Resources */,
+				3C476D9D14DB4D2600DBD043 /* sendMoney.png in Resources */,
+				3C476DA214DB508200DBD043 /* SendMoneyViewController.xib in Resources */,
+				3C476DA714DB515700DBD043 /* TransactionsViewController.xib in Resources */,
+				3C476DAC14DB521200DBD043 /* HistoryViewController.xib in Resources */,
+				3C476DB114DB524400DBD043 /* LocalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +344,14 @@
 			files = (
 				3C476D3F14DB42C600DBD043 /* main.m in Sources */,
 				3C476D4314DB42C600DBD043 /* AppDelegate.m in Sources */,
+				3C476D6C14DB435900DBD043 /* SEMenuItem.m in Sources */,
+				3C476D6D14DB435900DBD043 /* SESpringBoard.m in Sources */,
+				3C476D6E14DB435900DBD043 /* SEViewController.m in Sources */,
+				3C476D7514DB463400DBD043 /* RootViewController.m in Sources */,
+				3C476DA114DB508200DBD043 /* SendMoneyViewController.m in Sources */,
+				3C476DA614DB515700DBD043 /* TransactionsViewController.m in Sources */,
+				3C476DAB14DB521200DBD043 /* HistoryViewController.m in Sources */,
+				3C476DB014DB524400DBD043 /* LocalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
