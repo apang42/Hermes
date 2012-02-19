@@ -20,15 +20,6 @@
 @synthesize historyViewController;
 @synthesize localViewController;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -39,25 +30,44 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person{
+    return YES;
 }
-*/
 
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
+    return YES;
+}
+
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker{
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"viewDidLoad");
-    sendMoneyViewController = [[SendMoneyViewController alloc] initWithNibName:@"SendMoneyViewController" bundle:nil];
+    
+    //sendMoneyViewController = [[SendMoneyViewController alloc] initWithNibName:@"SendMoneyViewController" bundle:nil];
+    NSLog(@"view did load");
+    ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
+    picker.peoplePickerDelegate = self;
+    // Display only a person's phone, email, and birthdate
+	NSArray *displayedItems = [NSArray arrayWithObjects:[NSNumber numberWithInt:kABPersonPhoneProperty], 
+                               [NSNumber numberWithInt:kABPersonEmailProperty],
+                               [NSNumber numberWithInt:kABPersonBirthdayProperty], nil];
+	
+	
+	picker.displayedProperties = displayedItems;
+	// Show the picker 
+	//[self presentModalViewController:picker animated:YES];
+    /*
+    
     transactionsViewController = [[TransactionsViewController alloc] initWithNibName:@"TransactionsViewController" bundle:nil];
     historyViewController = [[HistoryViewController alloc] initWithNibName:@"HistoryViewController" bundle:nil];
     localViewController = [[LocalViewController alloc] initWithNibName:@"LocalViewController" bundle:nil];
+    
     // Create an array of SEMenuItem objects
     NSMutableArray *items = [NSMutableArray array];
-    [items addObject:[SEMenuItem initWithTitle:@"Send Money" imageName:@"sendMoney.png" viewController:sendMoneyViewController]];
+    [items addObject:[SEMenuItem initWithTitle:@"Send Money" imageName:@"sendMoney.png" viewController:picker]];
     [items addObject:[SEMenuItem initWithTitle:@"Transactions" imageName:@"pendingTransactions.png" viewController:transactionsViewController]];
     [items addObject:[SEMenuItem initWithTitle:@"History" imageName:@"history.png" viewController:historyViewController]];
     [items addObject:[SEMenuItem initWithTitle:@"Local Deals" imageName:@"localDeals.png" viewController:localViewController]];
@@ -68,7 +78,7 @@
     
     SESpringBoard *board = [SESpringBoard initWithTitle:@"Hermes Commerce" items:items launcherImage:[UIImage imageNamed:@"navbtn_home.png"]];
     [self.view addSubview:board];
-    
+    */
 }
 
 

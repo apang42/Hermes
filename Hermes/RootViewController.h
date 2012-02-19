@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate>
 
 @property(nonatomic, strong) UIViewController *sendMoneyViewController;
 @property(nonatomic, strong) UIViewController *transactionsViewController;

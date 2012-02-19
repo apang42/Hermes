@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C35E85B14F0DAB300F3CC46 /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35E85A14F0DAB300F3CC46 /* SigninViewController.m */; };
 		3C476D3314DB42C500DBD043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3214DB42C500DBD043 /* UIKit.framework */; };
 		3C476D3514DB42C500DBD043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3414DB42C500DBD043 /* Foundation.framework */; };
 		3C476D3714DB42C500DBD043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C476D3614DB42C500DBD043 /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		3C476D6D14DB435900DBD043 /* SESpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D6914DB435900DBD043 /* SESpringBoard.m */; };
 		3C476D6E14DB435900DBD043 /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D6B14DB435900DBD043 /* SEViewController.m */; };
 		3C476D7514DB463400DBD043 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C476D7414DB463400DBD043 /* RootViewController.m */; };
-		3C476D9314DB487700DBD043 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9214DB487700DBD043 /* RootViewController.xib */; };
 		3C476D9A14DB4D2600DBD043 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9614DB4D2600DBD043 /* history.png */; };
 		3C476D9B14DB4D2600DBD043 /* localDeals.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9714DB4D2600DBD043 /* localDeals.png */; };
 		3C476D9C14DB4D2600DBD043 /* pendingTransactions.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C476D9814DB4D2600DBD043 /* pendingTransactions.png */; };
@@ -44,6 +44,9 @@
 		3C70126E14EC611B004BE21D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70126D14EC611B004BE21D /* CoreVideo.framework */; };
 		3C70127014EC6124004BE21D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70126F14EC6124004BE21D /* QuartzCore.framework */; };
 		3C70127214EC613D004BE21D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70127114EC613D004BE21D /* libiconv.dylib */; };
+		3CBFE88514F0B7F200D40D39 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBFE88414F0B7F200D40D39 /* MainStoryboard.storyboard */; };
+		3CC4900014EEEF1900DA5827 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC48FFE14EEEF1900DA5827 /* AddressBook.framework */; };
+		3CC4900114EEEF1900DA5827 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC48FFF14EEEF1900DA5827 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C35E85914F0DAB300F3CC46 /* SigninViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigninViewController.h; sourceTree = "<group>"; };
+		3C35E85A14F0DAB300F3CC46 /* SigninViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigninViewController.m; sourceTree = "<group>"; };
 		3C476D2E14DB42C500DBD043 /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C476D3214DB42C500DBD043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C476D3414DB42C500DBD043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,7 +86,6 @@
 		3C476D6B14DB435900DBD043 /* SEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEViewController.m; sourceTree = "<group>"; };
 		3C476D7314DB463400DBD043 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3C476D7414DB463400DBD043 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		3C476D9214DB487700DBD043 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		3C476D9614DB4D2600DBD043 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		3C476D9714DB4D2600DBD043 /* localDeals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = localDeals.png; sourceTree = "<group>"; };
 		3C476D9814DB4D2600DBD043 /* pendingTransactions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendingTransactions.png; sourceTree = "<group>"; };
@@ -128,6 +132,9 @@
 		3C70126D14EC611B004BE21D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3C70126F14EC6124004BE21D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3C70127114EC613D004BE21D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		3CBFE88414F0B7F200D40D39 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3CC48FFE14EEEF1900DA5827 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3CC48FFF14EEEF1900DA5827 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC4900014EEEF1900DA5827 /* AddressBook.framework in Frameworks */,
+				3CC4900114EEEF1900DA5827 /* AddressBookUI.framework in Frameworks */,
 				3C70127214EC613D004BE21D /* libiconv.dylib in Frameworks */,
 				3C70127014EC6124004BE21D /* QuartzCore.framework in Frameworks */,
 				3C70126E14EC611B004BE21D /* CoreVideo.framework in Frameworks */,
@@ -162,6 +171,8 @@
 		3C476D2314DB42C500DBD043 = {
 			isa = PBXGroup;
 			children = (
+				3CC48FFE14EEEF1900DA5827 /* AddressBook.framework */,
+				3CC48FFF14EEEF1900DA5827 /* AddressBookUI.framework */,
 				3C70127114EC613D004BE21D /* libiconv.dylib */,
 				3C70126F14EC6124004BE21D /* QuartzCore.framework */,
 				3C70126D14EC611B004BE21D /* CoreVideo.framework */,
@@ -200,11 +211,13 @@
 		3C476D3814DB42C500DBD043 /* Hermes */ = {
 			isa = PBXGroup;
 			children = (
+				3CBFE88414F0B7F200D40D39 /* MainStoryboard.storyboard */,
+				3C35E85914F0DAB300F3CC46 /* SigninViewController.h */,
+				3C35E85A14F0DAB300F3CC46 /* SigninViewController.m */,
 				3C476D4114DB42C600DBD043 /* AppDelegate.h */,
 				3C476D4214DB42C600DBD043 /* AppDelegate.m */,
 				3C476D7314DB463400DBD043 /* RootViewController.h */,
 				3C476D7414DB463400DBD043 /* RootViewController.m */,
-				3C476D9214DB487700DBD043 /* RootViewController.xib */,
 				3C476D9E14DB508100DBD043 /* SendMoneyViewController.h */,
 				3C476D9F14DB508100DBD043 /* SendMoneyViewController.m */,
 				3C476DA014DB508100DBD043 /* SendMoneyViewController.xib */,
@@ -386,7 +399,7 @@
 		3C476D2514DB42C500DBD043 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Northern Arizona University";
 			};
 			buildConfigurationList = 3C476D2814DB42C500DBD043 /* Build configuration list for PBXProject "Hermes" */;
@@ -413,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C476D3D14DB42C500DBD043 /* InfoPlist.strings in Resources */,
-				3C476D9314DB487700DBD043 /* RootViewController.xib in Resources */,
 				3C476D9A14DB4D2600DBD043 /* history.png in Resources */,
 				3C476D9B14DB4D2600DBD043 /* localDeals.png in Resources */,
 				3C476D9C14DB4D2600DBD043 /* pendingTransactions.png in Resources */,
@@ -426,6 +438,7 @@
 				3C70126514EC60D5004BE21D /* zbar-help.html in Resources */,
 				3C70126614EC60D5004BE21D /* zbar-helpicons.png in Resources */,
 				3C70126714EC60D5004BE21D /* zbar-samples.png in Resources */,
+				3CBFE88514F0B7F200D40D39 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +483,7 @@
 				3C476DA614DB515700DBD043 /* TransactionsViewController.m in Sources */,
 				3C476DAB14DB521200DBD043 /* HistoryViewController.m in Sources */,
 				3C476DB014DB524400DBD043 /* LocalViewController.m in Sources */,
+				3C35E85B14F0DAB300F3CC46 /* SigninViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
