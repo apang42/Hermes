@@ -11,7 +11,6 @@
 #import "TransactionsViewController.h"
 #import "HistoryViewController.h"
 #import "LocalViewController.h"
-#import "SESpringBoard.h"
 
 @implementation RootViewController
 

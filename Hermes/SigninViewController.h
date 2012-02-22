@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 
-@interface SigninViewController : UITableViewController
+@interface SigninViewController : UITableViewController <RKRequestDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)dismissKeyboard:(id)sender;
+
+- (void)sendRequest;
 
 @end

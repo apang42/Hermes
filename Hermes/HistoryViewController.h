@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Northern Arizona University. All rights reserved.
 //
 
-#import "SEViewController.h"
-
-@interface HistoryViewController : SEViewController
+@interface HistoryViewController : UIViewController
 
 @end

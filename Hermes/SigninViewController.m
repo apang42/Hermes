@@ -53,6 +53,58 @@
 
 - (IBAction)dismissKeyboard:(id)sender{
     [self.view endEditing:true];
+    [self sendRequest];
+}
+
+- (void)sendRequest{
+    
+    
+    RKParams* params = [RKParams params];
+    [params setValue:@"mrtest@example.com" forParam:@"user[email]"];
+    [params setValue:@"password" forParam:@"user[password]"];
+    
+    [[RKClient sharedClient] post:@"/users/sign_in.json" params:params delegate:self];
+    /*
+    NSURL *URL = [NSURL URLWithString:@"http://localhost:3000/users/sign_in"];
+    RKRequest *request = [RKRequest requestWithURL:URL delegate:self];
+    request.authenticationType = RKRequestAuthenticationTypeHTTPBasic;
+    request.method = RKRequestMethodPOST;
+    request.params = params;
+    */
+    //request.username = @"test";
+    //request.password = @"asdf";
+    
+    /*request.queue = [RKClient sharedClient].requestQueue;
+    request.authenticationType = RKRequestAuthenticationTypeHTTP;
+    request.username = [usernameTextField text];
+    request.password = [passwordTextField text];*/
+    //[request send];
+}
+
+- (void)requestDidStartLoad:(RKRequest *)request{
+    NSLog(@"R did start load");
+}
+
+- (void)requestDidCancelLoad:(RKRequest *)request{
+    NSLog(@"R did cancel load");
+}
+
+- (void)requestDidTimeout:(RKRequest *)request{
+    NSLog(@"R did timeout");
+}
+
+- (void)request:(RKRequest *)request didFailLoadWithError:(NSError *)error {
+    RKLogError(@"Load of RKRequest %@ failed with error: %@", request, error);
+    NSLog(@"RK error");
+}
+
+- (void)request:(RKRequest *)request didLoadResponse:(RKResponse *)response {
+    RKLogCritical(@"Loading of RKRequest %@ completed with status code %d. Response body: %@", request, response.statusCode, [response bodyAsString]);
+    NSLog(@"RK success");    
+}
+
+- (void)request:(RKRequest *)request didReceiveData:(NSInteger)bytesReceived totalBytesReceived:(NSInteger)totalBytesReceived totalBytesExpectedToReceive:(NSInteger)totalBytesExpectedToReceive{
+    NSLog(@"did get data");
 }
 
 /*

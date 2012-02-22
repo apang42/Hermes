@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Northern Arizona University. All rights reserved.
 //
 
-#import "SEViewController.h"
-
-@interface TransactionsViewController : SEViewController
+@interface TransactionsViewController : UIViewController
 
 @end

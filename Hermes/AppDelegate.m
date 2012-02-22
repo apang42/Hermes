@@ -14,6 +14,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSLog(@"didFinishLaunchingWithOptions");
+    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace); 
+    RKClient *client = [RKClient clientWithBaseURL:@"http://localhost:3000"];
+    client.authenticationType = RKRequestAuthenticationTypeHTTPBasic;
+    
+    [RKClient setSharedClient:client];
+    
+    [[RKObjectManager sharedManager] setSerializationMIMEType:RKMIMETypeJSON];
     return YES;
 }
 
