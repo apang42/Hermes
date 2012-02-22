@@ -50,35 +50,28 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"textfield should return");
+    if (textField == passwordTextField){
+        [self sendRequest];
+    }
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    NSLog(@"textFieldDidEndEditing");
+}
+
 
 - (IBAction)dismissKeyboard:(id)sender{
     [self.view endEditing:true];
-    [self sendRequest];
 }
 
 - (void)sendRequest{
-    
-    
     RKParams* params = [RKParams params];
-    [params setValue:@"mrtest@example.com" forParam:@"user[email]"];
-    [params setValue:@"password" forParam:@"user[password]"];
-    
+    [params setValue:emailTextField.text forParam:@"user[email]"];
+    [params setValue:passwordTextField.text forParam:@"user[password]"];
     [[RKClient sharedClient] post:@"/users/sign_in.json" params:params delegate:self];
-    /*
-    NSURL *URL = [NSURL URLWithString:@"http://localhost:3000/users/sign_in"];
-    RKRequest *request = [RKRequest requestWithURL:URL delegate:self];
-    request.authenticationType = RKRequestAuthenticationTypeHTTPBasic;
-    request.method = RKRequestMethodPOST;
-    request.params = params;
-    */
-    //request.username = @"test";
-    //request.password = @"asdf";
-    
-    /*request.queue = [RKClient sharedClient].requestQueue;
-    request.authenticationType = RKRequestAuthenticationTypeHTTP;
-    request.username = [usernameTextField text];
-    request.password = [passwordTextField text];*/
-    //[request send];
 }
 
 - (void)requestDidStartLoad:(RKRequest *)request{
